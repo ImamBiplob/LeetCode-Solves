@@ -15,16 +15,16 @@ public class LCS {
         Arrays.sort(nums);
 
         int maxSequence = 1;
-        int currentMaxSeq = 1;
+        int currentSeq = 1;
 
         for (int i = 1; i < n; i++) {
             if (nums[i] != nums[i - 1]) {
                 if (nums[i] == nums[i - 1] + 1) {
-                    currentMaxSeq++;
-                    if (currentMaxSeq > maxSequence)
-                        maxSequence = currentMaxSeq;
+                    currentSeq++;
+                    if (currentSeq > maxSequence)
+                        maxSequence = currentSeq;
                 } else {
-                    currentMaxSeq = 1;
+                    currentSeq = 1;
                 }
             }
         }
