@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class ConstructBinaryTreeFromPreOrderAndPostOrderTraversal {
+public class ConstructBinaryTreeFromPreOrderAndInOrderTraversal {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         Map<Integer, Integer> inMap = new HashMap<Integer, Integer>();
 
