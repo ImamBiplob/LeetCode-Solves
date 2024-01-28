@@ -1,4 +1,4 @@
-public class OutOfBundaryPaths {
+public class OutOfBoundaryPaths {
     public int findPaths(int m, int n, int N, int x, int y) {
         final int M = 1000000000 + 7;
         int[][] dp = new int[m][n];
