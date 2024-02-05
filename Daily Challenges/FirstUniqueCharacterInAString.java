@@ -32,4 +32,21 @@ public class FirstUniqueCharacterInAString {
 
         return -1;
     }
+
+    public int firstUniqChar3(String s) {
+        int[] map = new int[26];
+
+        for (char ch : s.toCharArray()) {
+            map[ch - 'a']++;
+        }
+
+        int idx = 0;
+        for (char ch : s.toCharArray()) {
+            if (map[ch - 'a'] == 1)
+                return idx;
+            idx++;
+        }
+
+        return -1;
+    }
 }
